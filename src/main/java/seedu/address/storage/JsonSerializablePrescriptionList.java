@@ -29,7 +29,7 @@ class JsonSerializablePrescriptionList {
      */
     @JsonCreator
     public JsonSerializablePrescriptionList(
-            @JsonProperty("prescriptions") List<JsonAdaptedPrescription> prescriptions) {
+        @JsonProperty("prescriptions") List<JsonAdaptedPrescription> prescriptions) {
         this.prescriptions.addAll(prescriptions);
     }
 

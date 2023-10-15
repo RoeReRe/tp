@@ -19,7 +19,7 @@ import seedu.address.model.prescription.exceptions.PrescriptionNotFoundException
  * that the prescription being added or updated is unique in terms of identity in the
  * UniquePrescriptionList. However, the removal of a prescription uses Prescription#equals(Object)
  * so as to ensure that the prescription with exactly the same fields will be removed.
- *
+ * <p>
  * Supports a minimal set of list operations.
  *
  * @see Prescription#isSamePrescription(Prescription)
@@ -28,7 +28,7 @@ public class UniquePrescriptionList implements Iterable<Prescription> {
 
     private final ObservableList<Prescription> internalList = FXCollections.observableArrayList();
     private final ObservableList<Prescription> internalUnmodifiableList =
-            FXCollections.unmodifiableObservableList(internalList);
+        FXCollections.unmodifiableObservableList(internalList);
 
     /**
      * Returns true if the list contains an equivalent prescription as the given argument.

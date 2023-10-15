@@ -32,6 +32,7 @@ public interface PrescriptionListStorage {
 
     /**
      * Saves the given {@link ReadOnlyPrescriptionList} to the storage.
+     *
      * @param prescriptionList cannot be null.
      * @throws IOException if there was any problem writing to the file.
      */

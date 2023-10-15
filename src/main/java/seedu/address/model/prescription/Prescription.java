@@ -95,8 +95,8 @@ public class Prescription {
         }
 
         return otherPrescription != null
-                && otherPrescription.getName().equals(getName())
-                && otherPrescription.getStartDate().equals(getStartDate());
+            && otherPrescription.getName().equals(getName())
+            && otherPrescription.getStartDate().equals(getStartDate());
     }
 
     /**
@@ -116,34 +116,34 @@ public class Prescription {
 
         Prescription otherPrescription = (Prescription) other;
         return name.equals(otherPrescription.name)
-                && dosage.equals(otherPrescription.dosage)
-                && frequency.equals(otherPrescription.frequency)
-                && startDate.equals(otherPrescription.startDate)
-                && endDate.equals(otherPrescription.endDate)
-                && expiryDate.equals(otherPrescription.expiryDate)
-                && totalStock.equals(otherPrescription.totalStock)
-                && note.equals(otherPrescription.note);
+            && dosage.equals(otherPrescription.dosage)
+            && frequency.equals(otherPrescription.frequency)
+            && startDate.equals(otherPrescription.startDate)
+            && endDate.equals(otherPrescription.endDate)
+            && expiryDate.equals(otherPrescription.expiryDate)
+            && totalStock.equals(otherPrescription.totalStock)
+            && note.equals(otherPrescription.note);
     }
 
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
         return Objects.hash(name, dosage, frequency, startDate,
-                        endDate, expiryDate, totalStock, note);
+            endDate, expiryDate, totalStock, note);
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .add("name", name)
-                .add("dosage", dosage)
-                .add("frequency", frequency)
-                .add("startDate", startDate)
-                .add("endDate", endDate)
-                .add("expiryDate", expiryDate)
-                .add("totalStock", totalStock)
-                .add("note", note)
-                .toString();
+            .add("name", name)
+            .add("dosage", dosage)
+            .add("frequency", frequency)
+            .add("startDate", startDate)
+            .add("endDate", endDate)
+            .add("expiryDate", expiryDate)
+            .add("totalStock", totalStock)
+            .add("note", note)
+            .toString();
     }
 
 }

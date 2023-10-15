@@ -20,10 +20,10 @@ import seedu.address.model.tag.Tag;
  */
 public class SampleDataUtilPrescription {
     public static Prescription[] getSamplePrescriptions() {
-        return new Prescription[] {
+        return new Prescription[]{
             new Prescription(new Name("Aspirin"), new Dosage("1"), new Frequency("Daily"),
-                            new Date("01/08/2023"), new Date("25/12/2023"), new Date("01/12/2024"),
-                            new Stock("100"), new Note("Test note")),
+                new Date("01/08/2023"), new Date("25/12/2023"), new Date("01/12/2024"),
+                new Stock("100"), new Note("Test note")),
         };
     }
 
@@ -40,8 +40,8 @@ public class SampleDataUtilPrescription {
      */
     public static Set<Tag> getTagSet(String... strings) {
         return Arrays.stream(strings)
-                .map(Tag::new)
-                .collect(Collectors.toSet());
+            .map(Tag::new)
+            .collect(Collectors.toSet());
     }
 
 }

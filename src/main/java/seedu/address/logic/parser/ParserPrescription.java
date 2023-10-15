@@ -10,6 +10,7 @@ public interface ParserPrescription<T extends CommandPrescription> {
 
     /**
      * Parses {@code userInput} into a command and returns it.
+     *
      * @throws ParseException if {@code userInput} does not conform the expected format
      */
     T parse(String userInput) throws ParseException;

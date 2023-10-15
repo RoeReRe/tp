@@ -10,7 +10,7 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
 public class Date {
 
     public static final String MESSAGE_CONSTRAINTS =
-            "Dates should be in the dd/mm/yyyy format, and it should not be blank";
+        "Dates should be in the dd/mm/yyyy format, and it should not be blank";
 
     /*
      * The first character of the date must not be a whitespace,

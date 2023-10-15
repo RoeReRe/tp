@@ -27,7 +27,7 @@ public class ModelManagerPrescription implements ModelPrescription {
      * Initializes a ModelManagerPrescription with the given prescriptionList and userPrefs.
      */
     public ModelManagerPrescription(ReadOnlyPrescriptionList prescriptionList,
-        ReadOnlyUserPrefsPrescription userPrefs) {
+                                    ReadOnlyUserPrefsPrescription userPrefs) {
         requireAllNonNull(prescriptionList, userPrefs);
 
         logger.fine("Initializing with prescription list: " + prescriptionList + " and user prefs " + userPrefs);
@@ -142,8 +142,8 @@ public class ModelManagerPrescription implements ModelPrescription {
 
         ModelManagerPrescription otherModelManager = (ModelManagerPrescription) other;
         return prescriptionList.equals(otherModelManager.prescriptionList)
-                && userPrefs.equals(otherModelManager.userPrefs)
-                && filteredPrescriptions.equals(otherModelManager.filteredPrescriptions);
+            && userPrefs.equals(otherModelManager.userPrefs)
+            && filteredPrescriptions.equals(otherModelManager.filteredPrescriptions);
     }
 
 }

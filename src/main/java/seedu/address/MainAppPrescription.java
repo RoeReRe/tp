@@ -83,12 +83,12 @@ public class MainAppPrescription extends Application {
             prescriptionListOptional = storage.readPrescriptionList();
             if (!((Optional<?>) prescriptionListOptional).isPresent()) {
                 logger.info("Creating a new data file " + storage.getPrescriptionListFilePath()
-                        + " populated with a sample PrescriptionList.");
+                    + " populated with a sample PrescriptionList.");
             }
             initialData = prescriptionListOptional.orElseGet(SampleDataUtilPrescription::getSamplePrescriptionList);
         } catch (DataLoadingException e) {
             logger.warning("Data file at " + storage.getPrescriptionListFilePath() + " could not be loaded."
-                    + " Will be starting with an empty PrescriptionList.");
+                + " Will be starting with an empty PrescriptionList.");
             initialData = new PrescriptionList();
         }
 
@@ -125,7 +125,7 @@ public class MainAppPrescription extends Application {
             initializedConfig = configOptional.orElse(new Config());
         } catch (DataLoadingException e) {
             logger.warning("Config file at " + configFilePathUsed + " could not be loaded."
-                    + " Using default config properties.");
+                + " Using default config properties.");
             initializedConfig = new Config();
         }
 
@@ -156,7 +156,7 @@ public class MainAppPrescription extends Application {
             initializedPrefs = prefsOptional.orElse(new UserPrefsPrescription());
         } catch (DataLoadingException e) {
             logger.warning("Preference file at " + prefsFilePath + " could not be loaded."
-                    + " Using default preferences.");
+                + " Using default preferences.");
             initializedPrefs = new UserPrefsPrescription();
         }
 

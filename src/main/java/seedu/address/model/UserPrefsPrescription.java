@@ -14,12 +14,13 @@ import seedu.address.commons.core.GuiSettings;
 public class UserPrefsPrescription implements ReadOnlyUserPrefsPrescription {
 
     private GuiSettings guiSettings = new GuiSettings();
-    private Path prescriptionListFilePath = Paths.get("data" , "prescriptionList.json");
+    private Path prescriptionListFilePath = Paths.get("data", "prescriptionList.json");
 
     /**
      * Creates a {@code UserPrefsPrescriptionPrescription} with default values.
      */
-    public UserPrefsPrescription() {}
+    public UserPrefsPrescription() {
+    }
 
     /**
      * Creates a {@code UserPrefsPrescription} with the prefs in {@code userPrefs}.
@@ -69,7 +70,7 @@ public class UserPrefsPrescription implements ReadOnlyUserPrefsPrescription {
 
         UserPrefsPrescription otherUserPrefsPrescription = (UserPrefsPrescription) other;
         return guiSettings.equals(otherUserPrefsPrescription.guiSettings)
-                && prescriptionListFilePath.equals(otherUserPrefsPrescription.prescriptionListFilePath);
+            && prescriptionListFilePath.equals(otherUserPrefsPrescription.prescriptionListFilePath);
     }
 
     @Override

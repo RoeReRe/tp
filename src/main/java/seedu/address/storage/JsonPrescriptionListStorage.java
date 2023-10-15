@@ -46,7 +46,7 @@ public class JsonPrescriptionListStorage implements PrescriptionListStorage {
         requireNonNull(filePath);
 
         Optional<JsonSerializablePrescriptionList> jsonPrescriptionList = JsonUtil.readJsonFile(
-                filePath, JsonSerializablePrescriptionList.class);
+            filePath, JsonSerializablePrescriptionList.class);
         if (!jsonPrescriptionList.isPresent()) {
             return Optional.empty();
         }

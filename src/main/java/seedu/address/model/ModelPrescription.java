@@ -11,7 +11,9 @@ import seedu.address.model.prescription.Prescription;
  * The API of the ModelPrescription component.
  */
 public interface ModelPrescription {
-    /** {@code Predicate} that always evaluate to true */
+    /**
+     * {@code Predicate} that always evaluate to true
+     */
     Predicate<Prescription> PREDICATE_SHOW_ALL_PRESCRIPTIONS = unused -> true;
 
     /**
@@ -49,7 +51,9 @@ public interface ModelPrescription {
      */
     void setPrescriptionList(ReadOnlyPrescriptionList prescriptionList);
 
-    /** Returns the PrescriptionList */
+    /**
+     * Returns the PrescriptionList
+     */
     ReadOnlyPrescriptionList getPrescriptionList();
 
     /**
@@ -77,11 +81,14 @@ public interface ModelPrescription {
      */
     void setPrescription(Prescription target, Prescription editedPrescription);
 
-    /** Returns an unmodifiable view of the filtered prescription list */
+    /**
+     * Returns an unmodifiable view of the filtered prescription list
+     */
     ObservableList<Prescription> getFilteredPrescriptionList();
 
     /**
      * Updates the filter of the filtered prescription list to filter by the given {@code predicate}.
+     *
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredPrescriptionList(Predicate<Prescription> predicate);

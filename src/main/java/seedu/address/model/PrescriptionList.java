@@ -23,12 +23,12 @@ public class PrescriptionList implements ReadOnlyPrescriptionList {
      *
      * Note that non-static init blocks are not recommended to use. There are other ways to avoid duplication
      *   among constructors.
-     */
-    {
+     */ {
         prescriptions = new UniquePrescriptionList();
     }
 
-    public PrescriptionList() {}
+    public PrescriptionList() {
+    }
 
     /**
      * Creates an PrescriptionList using the Prescriptions in the {@code toBeCopied}
@@ -100,8 +100,8 @@ public class PrescriptionList implements ReadOnlyPrescriptionList {
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .add("prescriptions", prescriptions)
-                .toString();
+            .add("prescriptions", prescriptions)
+            .toString();
     }
 
     @Override

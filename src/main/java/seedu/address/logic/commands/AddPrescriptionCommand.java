@@ -24,29 +24,29 @@ public class AddPrescriptionCommand extends CommandPrescription {
     public static final String COMMAND_WORD = "add";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds a prescription to the prescription list. \n"
-            + "Parameters: "
-            + PREFIX_NAME + "medication_name "
-            + PREFIX_DOSAGE + "dosage "
-            + PREFIX_FREQUENCY + "frequency "
-            + PREFIX_START_DATE + "start_date "
-            + PREFIX_END_DATE + "end_date "
-            + PREFIX_EXPIRY_DATE + "expiry_date "
-            + PREFIX_TOTAL_STOCK + "total_stock "
-            + PREFIX_NOTE + "note \n"
-            // + "[" + PREFIX_TAG + "TAG]...\n"
-            + "Example: " + COMMAND_WORD + " "
-            + PREFIX_NAME + "Aspirin "
-            + PREFIX_DOSAGE + "1 "
-            + PREFIX_FREQUENCY + "Daily "
-            + PREFIX_START_DATE + "01/08/2023 "
-            + PREFIX_END_DATE + "25/12/2023 "
-            + PREFIX_EXPIRY_DATE + "01/01/2024 "
-            + PREFIX_TOTAL_STOCK + "100 "
-            + PREFIX_NOTE + "Test note";
+        + "Parameters: "
+        + PREFIX_NAME + "medication_name "
+        + PREFIX_DOSAGE + "dosage "
+        + PREFIX_FREQUENCY + "frequency "
+        + PREFIX_START_DATE + "start_date "
+        + PREFIX_END_DATE + "end_date "
+        + PREFIX_EXPIRY_DATE + "expiry_date "
+        + PREFIX_TOTAL_STOCK + "total_stock "
+        + PREFIX_NOTE + "note \n"
+        // + "[" + PREFIX_TAG + "TAG]...\n"
+        + "Example: " + COMMAND_WORD + " "
+        + PREFIX_NAME + "Aspirin "
+        + PREFIX_DOSAGE + "1 "
+        + PREFIX_FREQUENCY + "Daily "
+        + PREFIX_START_DATE + "01/08/2023 "
+        + PREFIX_END_DATE + "25/12/2023 "
+        + PREFIX_EXPIRY_DATE + "01/01/2024 "
+        + PREFIX_TOTAL_STOCK + "100 "
+        + PREFIX_NOTE + "Test note";
 
     public static final String MESSAGE_SUCCESS = "New prescription added: %1$s";
     public static final String MESSAGE_DUPLICATE_PRESCRIPTION = "This prescription already "
-            + "exists in the prescription list";
+        + "exists in the prescription list";
 
     private final Prescription toAdd;
 
@@ -88,7 +88,7 @@ public class AddPrescriptionCommand extends CommandPrescription {
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .add("toAdd", toAdd)
-                .toString();
+            .add("toAdd", toAdd)
+            .toString();
     }
 }

@@ -25,7 +25,7 @@ public class StorageManagerPrescription implements StoragePrescription {
      * and {@code UserPrefStorage}.
      */
     public StorageManagerPrescription(PrescriptionListStorage prescriptionListStorage,
-        UserPrefsStoragePrescription userPrefsStorage) {
+                                      UserPrefsStoragePrescription userPrefsStorage) {
         this.prescriptionListStorage = prescriptionListStorage;
         this.userPrefsStorage = userPrefsStorage;
     }
