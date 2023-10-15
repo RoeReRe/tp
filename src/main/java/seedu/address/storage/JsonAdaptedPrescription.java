@@ -40,9 +40,9 @@ class JsonAdaptedPrescription {
      */
     @JsonCreator
     public JsonAdaptedPrescription(@JsonProperty("name") String name, @JsonProperty("dosage") String dosage,
-                                   @JsonProperty("frequency") String frequency, @JsonProperty("startDate") String startDate,
-                                   @JsonProperty("endDate") String endDate, @JsonProperty("expiryDate") String expiryDate,
-                                   @JsonProperty("totalStock") String totalStock, @JsonProperty("note") String note) {
+        @JsonProperty("frequency") String frequency, @JsonProperty("startDate") String startDate,
+        @JsonProperty("endDate") String endDate, @JsonProperty("expiryDate") String expiryDate,
+        @JsonProperty("totalStock") String totalStock, @JsonProperty("note") String note) {
         this.name = name;
         this.dosage = dosage;
         this.frequency = frequency;

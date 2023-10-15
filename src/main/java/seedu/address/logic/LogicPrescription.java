@@ -27,7 +27,7 @@ public interface LogicPrescription {
     /**
      * Returns the PrescriptionList.
      *
-     * @see seedu.address.model.Model#getPrescriptionList()
+     * @see seedu.address.model.ModelPrescription#getPrescriptionList()
      */
     ReadOnlyPrescriptionList getPrescriptionList();
 

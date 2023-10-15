@@ -33,7 +33,7 @@ public class Prescription {
      * Every field must be present and not null.
      */
     public Prescription(Name name, Dosage dosage, Frequency frequency, Date startDate,
-                        Date endDate, Date expiryDate, Stock totalStock, Note note) {
+        Date endDate, Date expiryDate, Stock totalStock, Note note) {
         requireAllNonNull(name);
         this.name = name;
         this.dosage = dosage;
