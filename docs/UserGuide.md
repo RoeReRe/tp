@@ -113,9 +113,24 @@ Format:
 list
 ```
 
-Example usage of list command in BayMeds:
+Example output of list command in BayMeds:
 
 <img src="images/ui/Ui-list.png" alt="Example of list command" width="460" height="330">
+
+### Listing completed prescriptions : `listCompleted`
+
+Lists all completed prescriptions.
+
+Format:
+```
+listCompleted
+```
+
+* A prescription is automatically marked as complete when its `<end_date>` is past the current date.
+
+Example output of list completed command in BayMeds:
+
+<img src="images/ui/Ui-list-completed.png" alt="Example of list completed command" width="460" height="330">
 
 ### Editing a person : `edit`
 
@@ -172,22 +187,6 @@ Examples:
 Example usage of delete command in BayMeds:
 
 <img src="images/ui/Ui-delete.png" alt="Example of delete command" width="460" height="330">
-
-### Listing untaken medication : `list today`
-
-Lists all remaining medications to be taken for the day.
-
-Format:
-```
-list today
-```
-
-Examples:
-* `list today`.
-
-Example usage of list today command in BayMeds:
-
-<img src="images/ui/Ui-list_today.png" alt="Example of list today command" width="460" height="330">
 
 ### Marking a medication as taken : `take`
 
